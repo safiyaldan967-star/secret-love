@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surat Cinta Kerajaan</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #2e0b0b, #0e0404);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Libre Baskerville', serif;
+}
+
+#gate {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle, #1d0707, #000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.gate-box {
+  background: linear-gradient(#f7f1e1, #e6d8bc);
+  border-radius: 18px;
+  padding: 26px;
+  max-width: 360px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 0 0 4px #b89b5e, 0 20px 50px rgba(0,0,0,0.6);
+}
+
+.gate-box h2 {
+  font-family: 'Uncial Antiqua', cursive;
+  color: #6a1a1a;
+}
+
+.gate-box input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 14px;
+  border-radius: 10px;
+  border: 1px solid #b89b5e;
+  font-size: 15px;
+}
+
+.gate-box button {
+  margin-top: 16px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+  background: #6a1a1a;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.container {
+  display: none;
+  animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.parchment {
+  background: linear-gradient(180deg, #f7f1e1, #e8dcc4);
+  border-radius: 20px;
+  padding: 30px 24px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow:
+    0 0 0 4px #b89b5e,
+    0 30px 70px rgba(0,0,0,0.6);
+  position: relative;
+}
+
+.parchment::before,
+.parchment::after {
+  content: "✠";
+  position: absolute;
+  color: #8b6b2e;
+  font-size: 22px;
+}
+.parchment::before { top: 14px; left: 16px; }
+.parchment::after { bottom: 14px; right: 16px; }
+
+.title {
+  text-align: center;
+  font-family: 'Uncial Antiqua', cursive;
+  font-size: 32px;
+  color: #6a1a1a;
+  margin-bottom: 18px;
+}
+
+.letter {
+  font-size: 15.6px;
+  line-height: 1.8;
+  color: #3b2a1a;
+  white-space: pre-line;
+}
+
+.signature {
+  margin-top: 26px;
+  text-align: right;
+  font-style: italic;
+}
+
+.music-btn {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background: #6a1a1a;
+  color: white;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+</style>
+</head>
+
+<body>
+
+<div id="gate">
+  <div class="gate-box">
+    <h2>Letter for My Sweetiee Honey</h2>
+    <p>passwordnya apa hayooo :></p>
+    <input id="password" placeholder="••••••">
+    <button onclick="unlock()">Buka Surat</button>
+  </div>
+</div>
+
+<audio id="music" loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_7a6f5b07da.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" onclick="toggleMusic()">♫</button>
+
+<div class="container" id="content">
+  <div class="parchment">
+    <div class="title">Surat Cinta</div>
+
+    <div class="letter">
+Wa’alaikumussalam nyonyaa Anindya Putri Aurora, dengan rasa tulus dan rasa hormat Aldan mengucapkan banyakkk sekali terimakasih kepada Nyonya Tuan Putri/Bu Dokter/Senseii/Mbok Milah/Istri-Ku/Sayang-Ku/Cinta-Ku/Kasih-Ku/Perempuan-Ku/Cantik-ku dan apapun panggilan Nyonya Anindya. Hari ini tadi, Senin 5 Januari 2026 terasa amat senang, bahagia dan sedikit membingungkan. Aldan senang sekali akhirnya setelah lama penantian kembali ke sekolah yang dimana Aldan bisa bertemu orang yang amat Aldan cintai ini, iya betul orang itu adalah orang yang sedang membaca pesan tertulis ini, Anindya. Bahagiaaa sekali rasanya melihat Anindya dalam keaadaan yang amat menggembirakan, alhamdulillah Anindya sehat wal afiat kan?, iya alhamdulillahirabbil ‘alamin, selainn ituu Aldan juga bahagia sekaliiiiiii tentang apapun terkaitt Anindyaa, iya walaupun diriku mengantukkk sekaliii, hhu maaf aku tidak bobo semalemm, jadi kelihatan happi nyaa. 
+Oiya tadi sewaktu dikelas dan diriku sedang bobo, sebenarnya aku belum bobo, cuman tiduran saja dan aninn lucuu sekaliii, ihihi dia mencoba bangunkan dirikuuu, aku sempat mikir apa aku kagetinn yaa, ah tapi nggga jadii nunggu timing ngga dapet dapett. hhe sorry.
+Untuk perihal lingkungan pertemanan Aldan memang banyak sekali yang merokok, main cewe, ganggu ketentraman masyarakat bahkan ada yang minum minuman keras botolan seperti bir. Tetapi walaupun lingkungan Aldan yang seperti itu Aldan masih bisa menghindarinya walau yang orang yang melakukan itu berada tepat didepan mata Aldan. Tak lain dan tak bukan, Aldan bisa menjaga diri berkat adanya mamah yang selalu peduli terhdap Aldan juga Anindya yang sudah menjadi batas pagar pengingat Aldan untuk tidak berbuat hal hal semacam itu, hingga detik ini pun Aldan belum pernah sama sekali memasukann barang kotor itu ke dalam tubuh Aldan dan Aldan akan selalu menjaga tubuh Aldan dengan baik, jadi Anindya tidak perlu sekhawatir itu terhadap diri Aldan, Aldan pasti bisa untuk merawat diri sendiri terhindar dari pengaruh itu, terimakasih mamah, terimakasih Anindya.
+
+Oiya, terimakasih Anindya dirimu sudah repottt sekali mengeluarkan sejumlah uang yang ngga bisa dibilang kecil nominalnyaa untuk membelikan aldan hadiah berupa jaket dan parfum, terima kasih banyyakk. Selanjutnya Aldan juga akan balas hadiah itu juga dengan hadiah ya kemungkinnya nggga bernilai banyak atau tidak setara lah dengan hadiah apa yang diberikan Anindya, tap pastinya Aldan berharap Anindya bakal menyukainya. terakhir maaf bila selama kita mempunyai hubungan spesial ini Aldan selalu membuat Anindya sedih hingga meneteskan air mata yang amat berharga itu, Aldan minta maaf sekali atas segala sikap, perilaku, perbuatan dan kelakuan Aldan yang sama sekali tidak bisa dianggap mengenakkan hati dan perasaan, Aldan tau Aldan banyak kurang dan salahnya Aldan minta maaf dengan tulus dan penuh cinta. Apapun kekurangan dan kesalahan Aldan, Anindya dipersilakan untuk memberitahu Aldan dengan apapun caranya agar kedepannya Aldan bisa jadi seperti apa yang Anindya inginkan dan impikan. Terima kasih banyak.
+
+Doaku selalu menyertaimu langkahmu, semoga Allah selalu melindungi, menjaga, meridhoi dan memberkahi setiap langkah hidupmu, amin ya rabbal 'alamin. Semoga kita bisa segera dipertemukan dalam ikatan yang suci, dalam naungan ridho-Nya, amin ya rabbal 'alamin.
+
+Salam Cinta,
+Aldan.
+Wa’alaikumussalam
+    </div>
+
+    <div class="signature"></div>
+  </div>
+</div>
+
+<script>
+function unlock() {
+  if (document.getElementById("password").value.toLowerCase() === "baeee18") {
+    document.getElementById("gate").style.display = "none";
+    document.getElementById("content").style.display = "block";
+    document.getElementById("music").play();
+  } else {
+    alert("Kata kunci belum tepat");
+  }
+}
+
+function toggleMusic() {
+  const m = document.getElementById("music");
+  m.paused ? m.play() : m.pause();
+}
+</script>
+
+</body>
+</html>
